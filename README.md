@@ -1,4 +1,4 @@
-# RobloxScriptPyBot
+# Roblox Script Python Discord Bot
 i was bored so i made this 💀
 
 ## Documentation:
