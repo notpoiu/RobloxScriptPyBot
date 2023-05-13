@@ -4,12 +4,13 @@ I created this Discord bot as a fun project while I was bored. Feel free to use 
 
 **Credits would be appreciated but not required.**
 
+## Documentation
+For detailed documentation on how to use the Roblox Script Python Discord Bot, please refer to the [official documentation](https://upio.gitbook.io/roblox-script-bot-documentation/).
+
 ## Security Concerns
 The code runs every `.py` file inside the `scripts` directory. Why? Because its easier to extract the data from it, but that raises some security concerns.
 DO IN ANY CIRCUMSTANCES PUT A `.py` FILE THAT YOU DON'T KNOW WHAT IT DOES INSIDE THE SCRIPTS DIRECTORY.
 
-## Documentation
-For detailed documentation on how to use the Roblox Script Python Discord Bot, please refer to the [official documentation](https://upio.gitbook.io/roblox-script-bot-documentation/).
 
 ## How to Install
 To install and set up the bot, follow these steps:
