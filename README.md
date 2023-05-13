@@ -5,7 +5,7 @@ I created this Discord bot as a fun project while I was bored. Feel free to use 
 **Credits would be appreciated but not required.**
 
 ## Security Concerns
-The code runs every `.py` file inside the `scripts` directory. Why? Because its easier to extract the table from it, but that raises some security concerns.
+The code runs every `.py` file inside the `scripts` directory. Why? Because its easier to extract the data from it, but that raises some security concerns.
 DO IN ANY CIRCUMSTANCES PUT A `.py` FILE THAT YOU DON'T KNOW WHAT IT DOES INSIDE THE SCRIPTS DIRECTORY.
 
 ## Documentation
