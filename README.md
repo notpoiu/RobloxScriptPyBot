@@ -35,8 +35,8 @@ To set up the bot and make it work with your Discord server, follow these steps:
 Next, we need to enable intents for the bot to work properly:
 
 1. Scroll down on the Discord Developer Portal page until you find the "Privileged Gateway Intents" section.
-   ![Intents Section](https://github.com/notpoiu/RobloxScriptPyBot/blob/main/assets/75510171/cd05f4ad-7cb5-4128-add7-9355f2a88467.png)
+   ![Intents Unchecked](https://github.com/notpoiu/RobloxScriptPyBot/assets/75510171/cd05f4ad-7cb5-4128-add7-9355f2a88467)
 2. Enable all the intents by checking the corresponding checkboxes. (You don't need to enable every single one, but it's recommended for the bot's functionality.)
-   ![Intents](https://github.com/notpoiu/RobloxScriptPyBot/blob/main/assets/75510171/856582c0-70f6-4605-9b34-6d1dea8f1f9f.png)
+   ![Intents Checked](https://github.com/notpoiu/RobloxScriptPyBot/assets/75510171/856582c0-70f6-4605-9b34-6d1dea8f1f9f)
 
 That's it! You have successfully set up the bot. Now you can run it and start using the Roblox Script Python Discord Bot in your server.
