@@ -9,7 +9,7 @@ For detailed documentation on how to use the Roblox Script Python Discord Bot, p
 
 ## Security Concerns
 The code runs every `.py` file inside the `scripts` directory. Why? Because its easier to extract the data from it, but that raises some security concerns.
-DO IN ANY CIRCUMSTANCES PUT A `.py` FILE THAT YOU DON'T KNOW WHAT IT DOES INSIDE THE SCRIPTS DIRECTORY.
+DO IN ANY CIRCUMSTANCES PUT A `.py` FILE THAT YOU DON'T KNOW WHAT IT DOES INSIDE THE `SCRIPTS` DIRECTORY.
 
 
 ## How to Install
