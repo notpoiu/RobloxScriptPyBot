@@ -35,6 +35,29 @@ def getConfig(key):
 
 @client.event
 async def on_ready():
+    botDisplay = getConfig("Bot Info")
+
+    if "Bot Display" in botDisplay:
+        botDisplay = botDisplay["Bot Display"]
+
+        # Set the bot's status
+        if botDisplay["Status"] == "Do Not Disturb":
+            await client.change_presence(status=discord.Status.dnd)
+        elif botDisplay["Status"] == "Online":
+            await client.change_presence(status=discord.Status.online)
+        elif botDisplay["Status"] == "Idle":
+            await client.change_presence(status=discord.Status.idle)
+
+        # Set the bot's activity
+        if "Activity" in botDisplay:
+            activity = botDisplay["Activity"]
+            if activity["Type"] == "Playing":
+                await client.change_presence(activity=discord.Game(name=activity["Name"]))
+            elif activity["Type"] == "Streaming":
+                await client.change_presence(activity=discord.Streaming(name=activity["Name"], url=activity["URL"]))
+            elif activity["Type"] == "Listening":
+                await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=activity["Name"]))
+
     await tree.sync(guild=discord.Object(id=getConfig("Server Info")["Server ID"]))  # Sync the command tree with the guild
     print(f'We have logged in as {client.user}')
 
