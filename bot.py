@@ -41,22 +41,29 @@ async def on_ready():
         botDisplay = botDisplay["Bot Display"]
 
         # Set the bot's status
+        status = discord.Status.online  # Default status
         if botDisplay["Status"] == "Do Not Disturb":
-            await client.change_presence(status=discord.Status.dnd)
-        elif botDisplay["Status"] == "Online":
-            await client.change_presence(status=discord.Status.online)
+            status = discord.Status.dnd
         elif botDisplay["Status"] == "Idle":
-            await client.change_presence(status=discord.Status.idle)
+            status = discord.Status.idle
 
         # Set the bot's activity
+        activity = None
         if "Activity" in botDisplay:
-            activity = botDisplay["Activity"]
-            if activity["Type"] == "Playing":
-                await client.change_presence(activity=discord.Game(name=activity["Name"]))
-            elif activity["Type"] == "Streaming":
-                await client.change_presence(activity=discord.Streaming(name=activity["Name"], url=activity["URL"]))
-            elif activity["Type"] == "Listening":
-                await client.change_presence(activity=discord.Activity(type=discord.ActivityType.listening, name=activity["Name"]))
+            activity_data = botDisplay["Activity"]
+            activity_type = activity_data["Type"]
+            activity_name = activity_data["Name"]
+
+            if activity_type == "Playing":
+                activity = discord.Game(name=activity_name)
+            elif activity_type == "Streaming":
+                activity_url = activity_data["URL"]
+                activity = discord.Streaming(name=activity_name, url=activity_url)
+            elif activity_type == "Listening":
+                activity = discord.Activity(type=discord.ActivityType.listening, name=activity_name)
+
+        await client.change_presence(status=status, activity=activity)
+
 
     await tree.sync(guild=discord.Object(id=getConfig("Server Info")["Server ID"]))  # Sync the command tree with the guild
     print(f'We have logged in as {client.user}')
