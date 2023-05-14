@@ -7,7 +7,16 @@
     "Bot Info": {
         "Color Scheme": "ad180e",
         "Bot Description": "This is a bot made for Baller. The bot's code is also open source!",
+        
+        "Bot Display":{
+            "Status": "Do Not Disturb",
 
+            "Activity": {
+                "Type": "Listening",
+                "Name": "Deivid having no baller"
+            }
+        },
+        
         "Token": "your token here"
     }
 }
