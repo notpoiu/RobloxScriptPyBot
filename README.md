@@ -2,6 +2,8 @@
 
 I created this Discord bot as a fun project while I was bored. Feel free to use it for your own purposes!
 
+https://github.com/notpoiu/RobloxScriptPyBot/assets/75510171/c6ecbcc6-d493-4b6a-88bb-db080da0ff0f
+
 **Credits would be appreciated but not required.**
 
 ## Documentation
